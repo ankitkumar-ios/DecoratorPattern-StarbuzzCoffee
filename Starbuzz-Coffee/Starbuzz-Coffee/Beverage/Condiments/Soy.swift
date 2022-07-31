@@ -18,7 +18,19 @@ class Soy: Beverage, CondimentsDecorator {
         return ", Soy"
     }
 
-    override func cost() -> Float {
-        return 20 + beverage.cost()
+    override func getSize() -> BeverageSize {
+        return beverage.getSize()
     }
+
+    override func cost() -> Float {
+        switch getSize() {
+        case .tall:
+            return 15 + beverage.cost()
+        case .grande:
+            return 20 + beverage.cost()
+        case .venti:
+            return 25 + beverage.cost()
+        }
+    }
+
 }

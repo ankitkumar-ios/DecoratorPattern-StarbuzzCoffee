@@ -18,7 +18,18 @@ class Milk: Beverage, CondimentsDecorator {
         return ", Milk"
     }
 
+    override func getSize() -> BeverageSize {
+        return beverage.getSize()
+    }
+
     override func cost() -> Float {
-        return 10 + beverage.cost()
+        switch getSize() {
+        case .tall:
+            return 8 + beverage.cost()
+        case .grande:
+            return 10 + beverage.cost()
+        case .venti:
+            return 12 + beverage.cost()
+        }
     }
 }

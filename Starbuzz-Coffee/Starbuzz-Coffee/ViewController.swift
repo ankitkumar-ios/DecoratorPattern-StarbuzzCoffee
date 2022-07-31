@@ -23,12 +23,14 @@ class ViewController: UIViewController {
 
     func makeHouseBlend() {
         let coffee = HouseBlend()
+        coffee.size = .venti
         let milk = Milk(beverage: coffee)
         let whip = Whip(beverage: milk)
         print("HouseBlend Cost - \(whip.cost())")
     }
     func makeDarkRoast() {
         let coffee = DarkRoast()
+        coffee.size = .venti
         let milk = Milk(beverage: coffee)
         let whip = Whip(beverage: milk)
         let soy = Soy(beverage: whip)
@@ -36,6 +38,7 @@ class ViewController: UIViewController {
     }
     func makeDecaf() {
         let coffee = Decaf()
+        coffee.size = .grande
         let milk = Milk(beverage: coffee)
         let whip = Whip(beverage: milk)
         let mocha = Mocha(beverage: whip)
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
     }
     func makeEspresso() {
         let coffee = Espresso()
+        coffee.size = .tall
         let milk = Milk(beverage: coffee)
         let mocha = Mocha(beverage: milk)
         let soy = Soy(beverage: mocha)

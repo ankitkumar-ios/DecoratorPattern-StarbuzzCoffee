@@ -8,8 +8,12 @@
 import Foundation
 
 class DarkRoast: Beverage {
+    var size: BeverageSize = .grande
     override func getDescription() -> String {
         return "DarkRoast"
+    }
+    override func getSize() -> BeverageSize {
+        return size
     }
     override func cost() -> Float {
         return 120

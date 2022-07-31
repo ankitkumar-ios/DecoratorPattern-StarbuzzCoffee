@@ -16,7 +16,19 @@ class Mocha: Beverage, CondimentsDecorator {
         return ", Mocha"
     }
 
-    override func cost() -> Float {
-        return 30 + beverage.cost()
+    override func getSize() -> BeverageSize {
+        return beverage.getSize()
     }
+
+    override func cost() -> Float {
+        switch getSize() {
+        case .tall:
+            return 25 + beverage.cost()
+        case .grande:
+            return 30 + beverage.cost()
+        case .venti:
+            return 35 + beverage.cost()
+        }
+    }
+
 }
