@@ -1,0 +1,15 @@
+//
+//  Decaf.swift
+//  Starbuzz-Coffee
+//
+//  Created by Ankit Kumar on 31/07/22.
+//
+
+import Foundation
+
+class Decaf: BeverageBase {
+    override func cost() -> Float {
+        let value = super.cost()
+        return 130 + value
+    }
+}
