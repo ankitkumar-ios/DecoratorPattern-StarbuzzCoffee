@@ -18,6 +18,10 @@
 		EF8640C0289654DA00283663 /* DarkRoast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640BF289654DA00283663 /* DarkRoast.swift */; };
 		EF8640C2289654EA00283663 /* Decaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640C1289654EA00283663 /* Decaf.swift */; };
 		EF8640C42896550100283663 /* Espresso.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640C32896550100283663 /* Espresso.swift */; };
+		EF8640C92896967200283663 /* Milk.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640C82896967200283663 /* Milk.swift */; };
+		EF8640CB2896967700283663 /* Soy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640CA2896967700283663 /* Soy.swift */; };
+		EF8640CD2896967B00283663 /* Whip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640CC2896967B00283663 /* Whip.swift */; };
+		EF8640CF2896968000283663 /* Mocha.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8640CE2896968000283663 /* Mocha.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		EF8640BF289654DA00283663 /* DarkRoast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkRoast.swift; sourceTree = "<group>"; };
 		EF8640C1289654EA00283663 /* Decaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decaf.swift; sourceTree = "<group>"; };
 		EF8640C32896550100283663 /* Espresso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Espresso.swift; sourceTree = "<group>"; };
+		EF8640C82896967200283663 /* Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milk.swift; sourceTree = "<group>"; };
+		EF8640CA2896967700283663 /* Soy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soy.swift; sourceTree = "<group>"; };
+		EF8640CC2896967B00283663 /* Whip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whip.swift; sourceTree = "<group>"; };
+		EF8640CE2896968000283663 /* Mocha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocha.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				EF8640BA2896508B00283663 /* BeverageBase.swift */,
+				EF8640C52896965500283663 /* Condiments */,
 				EF8640BC289654A300283663 /* BeverageType */,
 			);
 			path = Beverage;
@@ -96,6 +105,17 @@
 				EF8640C32896550100283663 /* Espresso.swift */,
 			);
 			path = BeverageType;
+			sourceTree = "<group>";
+		};
+		EF8640C52896965500283663 /* Condiments */ = {
+			isa = PBXGroup;
+			children = (
+				EF8640C82896967200283663 /* Milk.swift */,
+				EF8640CA2896967700283663 /* Soy.swift */,
+				EF8640CE2896968000283663 /* Mocha.swift */,
+				EF8640CC2896967B00283663 /* Whip.swift */,
+			);
+			path = Condiments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF8640C2289654EA00283663 /* Decaf.swift in Sources */,
+				EF8640C92896967200283663 /* Milk.swift in Sources */,
 				EF8640BE289654C800283663 /* HouseBlend.swift in Sources */,
 				EF8640AA2896503B00283663 /* ViewController.swift in Sources */,
 				EF8640BB2896508B00283663 /* BeverageBase.swift in Sources */,
+				EF8640CD2896967B00283663 /* Whip.swift in Sources */,
+				EF8640CF2896968000283663 /* Mocha.swift in Sources */,
+				EF8640CB2896967700283663 /* Soy.swift in Sources */,
 				EF8640A62896503B00283663 /* AppDelegate.swift in Sources */,
 				EF8640C42896550100283663 /* Espresso.swift in Sources */,
 				EF8640A82896503B00283663 /* SceneDelegate.swift in Sources */,

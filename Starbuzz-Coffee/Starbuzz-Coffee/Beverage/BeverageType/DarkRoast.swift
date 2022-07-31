@@ -7,9 +7,11 @@
 
 import Foundation
 
-class DarkRoast: BeverageBase {
+class DarkRoast: Beverage {
+    override func getDescription() -> String {
+        return "DarkRoast"
+    }
     override func cost() -> Float {
-        let value = super.cost()
-        return 120 + value
+        return 120
     }
 }
