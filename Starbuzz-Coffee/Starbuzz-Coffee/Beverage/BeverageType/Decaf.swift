@@ -7,9 +7,15 @@
 
 import Foundation
 
-class Decaf: BeverageBase {
+class Decaf: Beverage {
+    var size: BeverageSize = .grande
+    override func getDescription() -> String {
+        return "Decaf"
+    }
+    override func getSize() -> BeverageSize {
+        return size
+    }
     override func cost() -> Float {
-        let value = super.cost()
-        return 130 + value
+        return 130
     }
 }

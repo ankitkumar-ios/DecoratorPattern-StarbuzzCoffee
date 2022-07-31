@@ -7,9 +7,16 @@
 
 import Foundation
 
-class HouseBlend: BeverageBase {
+class HouseBlend: Beverage {
+    var size: BeverageSize = .grande
+
+    override func getDescription() -> String {
+        return "HouseBlend"
+    }
+    override func getSize() -> BeverageSize {
+        return size
+    }
     override func cost() -> Float {
-        let value = super.cost()
-        return 100 + value
+        return 100
     }
 }

@@ -23,30 +23,34 @@ class ViewController: UIViewController {
 
     func makeHouseBlend() {
         let coffee = HouseBlend()
-        coffee.setMilk(true)
-        coffee.setWhip(true)
-        print("HouseBlend Cost - \(coffee.cost())")
+        coffee.size = .venti
+        let milk = Milk(beverage: coffee)
+        let whip = Whip(beverage: milk)
+        print("HouseBlend Cost - \(whip.cost())")
     }
     func makeDarkRoast() {
         let coffee = DarkRoast()
-        coffee.setMilk(true)
-        coffee.setWhip(true)
-        coffee.setSoy(true)
-        print("DarkRoast Cost - \(coffee.cost())")
+        coffee.size = .venti
+        let milk = Milk(beverage: coffee)
+        let whip = Whip(beverage: milk)
+        let soy = Soy(beverage: whip)
+        print("DarkRoast Cost - \(soy.cost())")
     }
     func makeDecaf() {
         let coffee = Decaf()
-        coffee.setMilk(true)
-        coffee.setWhip(true)
-        coffee.setMocha(true)
-        print("Decaf Cost - \(coffee.cost())")
+        coffee.size = .grande
+        let milk = Milk(beverage: coffee)
+        let whip = Whip(beverage: milk)
+        let mocha = Mocha(beverage: whip)
+        print("Decaf Cost - \(mocha.cost())")
     }
     func makeEspresso() {
         let coffee = Espresso()
-        coffee.setMilk(true)
-        coffee.setMocha(true)
-        coffee.setSoy(true)
-        print("Espresso Cost - \(coffee.cost())")
+        coffee.size = .tall
+        let milk = Milk(beverage: coffee)
+        let mocha = Mocha(beverage: milk)
+        let soy = Soy(beverage: mocha)
+        print("Espresso Cost - \(soy.cost())")
     }
 }
 

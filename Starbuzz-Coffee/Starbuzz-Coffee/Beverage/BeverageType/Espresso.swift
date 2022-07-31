@@ -7,9 +7,16 @@
 
 import Foundation
 
-class Espresso: BeverageBase {
-    override func cost() -> Float {
-        let value = super.cost()
-        return 140 + value
+class Espresso: Beverage {
+    var size: BeverageSize = .grande
+    override func getDescription() -> String {
+        return "Espresso"
     }
+    override func getSize() -> BeverageSize {
+        return size
+    }
+    override func cost() -> Float {
+        return 140
+    }
+
 }
